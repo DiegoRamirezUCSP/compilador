@@ -1,9 +1,15 @@
 Program → Declaration | Program Declaration
+
 Declaration → Function | VarDecl
+
 Function → Type Identifier ( Params ) { StmtList }
+
 Type → IntType | BoolType | CharType | StringType | ArrayType | Void
+
 ArrayType → Type [ ]
+
 Params → Type Identifier | Type Identifier , Params | ε
+
 VarDecl → Type Identifier ; | Type Identifier = Expression ;
 StmtList → Statement | StmtList Statement
 Statement → VarDecl | IfStmt | ForStmt | ReturnStmt | PrintStmt | ExprStmt | { StmtList }
