@@ -1,0 +1,7 @@
+funcion suma(a, b) {
+    print(a + b);
+}
+
+integer x = 10;
+integer y = 5;
+suma(x, y);
